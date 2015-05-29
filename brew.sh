@@ -46,7 +46,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+#brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -86,6 +86,7 @@ brew install dark-mode
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install hub
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -99,6 +100,33 @@ brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+FORMULAE=(
+	ios-sim
+)
 
+brew install ${FORMULAE[@]}
+
+# install R
+brew tap homebrew/science
+brew install r
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+CASKS=(
+	gimp
+	inkscape
+	iterm2
+	firefox
+	google-chrome
+	unrarx
+)
+brew cask install ${CASKS[@]}
 # Remove outdated versions from the cellar.
 brew cleanup
+
+### Set newly installed bash as default (otherwise, shell scripts will use the 3.0 bash if the shebang is "#!/bin/bash")
+# Add the new shell to the list of allowed shells
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+# Change to the new shell
+chsh -s /usr/local/bin/bash
