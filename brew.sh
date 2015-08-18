@@ -102,6 +102,7 @@ brew install webkit2png
 brew install zopfli
 FORMULAE=(
 	ios-sim
+	python3
 )
 
 brew install ${FORMULAE[@]}
@@ -115,11 +116,13 @@ brew tap caskroom/versions
 
 CASKS=(
 	gimp
+	xquartz
 	inkscape
 	iterm2
 	firefox
 	google-chrome
 	unrarx
+	vlc
 )
 brew cask install ${CASKS[@]}
 # Remove outdated versions from the cellar.
