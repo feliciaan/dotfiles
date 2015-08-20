@@ -123,6 +123,7 @@ CASKS=(
 	google-chrome
 	unrarx
 	vlc
+	atom
 )
 brew cask install ${CASKS[@]}
 # Remove outdated versions from the cellar.
