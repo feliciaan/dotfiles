@@ -15,3 +15,6 @@ Thumbs.db
 
 # Jetbrains IDE
 .idea/
+
+# Latexian files
+TSWLatexianTemp*
