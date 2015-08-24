@@ -103,6 +103,7 @@ brew install zopfli
 FORMULAE=(
 	ios-sim
 	python3
+	ngrok
 )
 
 brew install ${FORMULAE[@]}
