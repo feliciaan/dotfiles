@@ -29,4 +29,4 @@ export GREP_OPTIONS='--color=auto';
 export RBENV_ROOT=/usr/local/var/rbenv
 
 # Go and Go PATH
-export GOPATH=\$HOME/gopath
+export GOPATH=\$HOME/.gopath
