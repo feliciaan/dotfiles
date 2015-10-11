@@ -104,6 +104,8 @@ FORMULAE=(
 	ios-sim
 	python3
 	ngrok
+	rbenv
+	ruby-build
 )
 
 brew install ${FORMULAE[@]}
@@ -125,6 +127,13 @@ CASKS=(
 	unrarx
 	vlc
 	atom
+	spectacle
+	sequel-pro
+	vimr
+	pycharm
+	rubymine
+	intellij-idea
+	minecraft
 )
 brew cask install ${CASKS[@]}
 # Remove outdated versions from the cellar.
