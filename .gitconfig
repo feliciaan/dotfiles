@@ -166,3 +166,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Feliciaan De Palmenaer
+	email = feliciaan@de-palmenaer.eu
